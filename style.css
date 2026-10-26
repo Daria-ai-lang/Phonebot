@@ -1,0 +1,18 @@
+body {
+    margin: 0; padding: 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: var(--tg-theme-text-color);
+    background: var(--tg-theme-bg-color);
+}
+.container { max-width: 390px; margin: 0 auto; }
+.inner { display: grid; grid-template-columns: 1fr 1fr; gap: 15px; }
+.item { text-align: center; }
+.btn {
+    width: 100%; padding: 15px 5px;
+    border: none; background: #f8a818;
+    border-radius: 10px; color: #fff;
+    font-weight: 700; font-size: 14px;
+    cursor: pointer;
+}
+.btn:hover { background: lightgreen; }
