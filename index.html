@@ -2,30 +2,47 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="style.css">
-    <title>Выбор смартфона</title>
+    <title>Каталог смартфонов</title>
 </head>
 <body>
     <div class="container">
-        <h2 style="text-align: center; color: var(--tg-theme-text-color);">Выбери смартфон</h2>
-        <div class="inner">
-            <div class="item">
-                <button class="btn" id="btn1">iPhone 15 Pro Max</button>
+        <header>
+            <h1>Выбери свой смартфон</h1>
+            <p>Нажми на карточку, чтобы узнать подробнее</p>
+        </header>
+        
+        <div class="grid">
+            <!-- Карточка 1 -->
+            <div class="card" id="btn1">
+                <img src="iphone15.png" alt="iPhone 15" class="phone-img">
+                <h3>iPhone 15 Pro Max</h3>
+                <span class="price">от 139 990 ₽</span>
             </div>
-            <div class="item">
-                <button class="btn" id="btn2">Samsung S24 Ultra</button>
+            
+            <!-- Карточка 2 -->
+            <div class="card" id="btn2">
+                <img src="samsung24.png" alt="Samsung S24" class="phone-img">
+                <h3>Samsung S24 Ultra</h3>
+                <span class="price">от 139 990 ₽</span>
             </div>
-            <div class="item">
-                <button class="btn" id="btn3">iPhone 14</button>
+            
+            <!-- Карточка 3 -->
+            <div class="card" id="btn3">
+                <img src="iphone14.png" alt="iPhone 14" class="phone-img">
+                <h3>iPhone 14</h3>
+                <span class="price">от 69 990 ₽</span>
             </div>
-            <div class="item">
-                <button class="btn" id="btn4">Samsung S23 FE</button>
+            
+            <!-- Карточка 4 -->
+            <div class="card" id="btn4">
+                <img src="samsung23.png" alt="Samsung S23 FE" class="phone-img">
+                <h3>Samsung S23 FE</h3>
+                <span class="price">от 54 990 ₽</span>
             </div>
         </div>
     </div>
-
-    <!-- Подключаем скрипт Telegram ПЕРЕД нашим app.js -->
     <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script src="app.js"></script>
 </body>
