@@ -24,5 +24,7 @@ setupButton("btn3", "iphone_14", "Подробнее об iPhone 14");
 setupButton("btn4", "samsung_s23_fe", "Подробнее о Samsung S23 FE");
 
 Telegram.WebApp.onEvent("mainButtonClicked", function () {
+    console.log("Кнопка нажата! Отправляю: " + item);
+    alert("Отправляю в бота: " + item); // Это покажет окошко на экране
     tg.sendData(item);
 });
